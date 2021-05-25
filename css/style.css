@@ -1,5 +1,3 @@
-/* CSS Document */
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -44,7 +42,7 @@ ul, li {
 }
 
 /*--------------------------------
-　全体
+  Entire
 ---------------------------------*/
 
 #wrapper {
@@ -58,12 +56,8 @@ ul, li {
   padding: 0 10px;
 }
 
-#contents {
-  /* padding: 100px 0; */
-}
-
 /*--------------------------------
-　ヘッダー
+　Header
 ---------------------------------*/
 
 #header {
@@ -115,7 +109,7 @@ ul, li {
 }
 
 /*--------------------------------
-　グローバルナビ
+　Navigation
 ---------------------------------*/
 
 #gnav {
@@ -168,7 +162,6 @@ ul, li {
 ---------------------------------*/
 
 .section .inner {
-  /* padding: 80px 10px; */
   padding: 80px 10px 10px 0px;
 }
 
@@ -185,6 +178,10 @@ ul, li {
   font-weight: bold;
   margin-bottom: 10px;
   color: #444;
+}
+
+.section .ml {
+  font-size: 44px;
 }
 
 .section .section-desc {
@@ -218,19 +215,7 @@ ul, li {
 }
 
 /*--------------------------------
-　Latestworks
----------------------------------*/
-
-#latestworks .two-column-image {
-  width: 48%;
-}
-
-#latestworks .two-column-desc {
-  width: 48%;
-}
-
-/*--------------------------------
-　WORKS
+　EXPERIENCES
 ---------------------------------*/
 
 #works .card {
@@ -282,18 +267,6 @@ ul, li {
 }
 
 /*--------------------------------
-　About
----------------------------------*/
-
-#about .two-column-image {
-  width: 33%;
-}
-
-#about .two-column-desc {
-  width: 62%;
-}
-
-/*--------------------------------
  SKILL
 ---------------------------------*/
 
@@ -326,6 +299,22 @@ ul, li {
 
 #skill .card:first-child {
   flex-basis: 100%;
+}
+
+#skill .stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skill .stack li {
+  width: calc(10%);
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+#skill .stack li img {
+  max-width: 100%;
+  height: auto;
 }
 
 #skill .skill-icon {
